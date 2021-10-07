@@ -11,7 +11,7 @@
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="30dp"
+    android:layout_margin="15dp"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -19,7 +19,7 @@
         android:id="@+id/nameText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="10dp"
         android:ems="10"
         android:hint="Notes Title"
         android:inputType="textEmailAddress"
@@ -30,8 +30,8 @@
         android:id="@+id/editTextTextMultiLine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:paddingTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="5dp"
         android:ems="10"
         android:gravity="start|top"
         android:hint="Enter notes here!"
@@ -43,7 +43,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="2dp"
+        android:layout_marginBottom="1dp"
         android:orientation="horizontal"
         >
 
@@ -51,28 +51,28 @@
             android:id="@+id/save_or_update_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
             android:layout_weight="1"
             android:text="@={viewModel.save_or_update}"
             android:onClick="@{()->viewModel.saveUpdate()}"
-            android:textSize="36sp" />
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/delete_or_clear_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
             android:layout_weight="1"
             android:text="@={viewModel.delete_or_clear}"
             android:onClick="@{()->viewModel.clearAllOrDelete()}"
-            android:textSize="36sp" />
+            android:textSize="18sp" />
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_margin="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
